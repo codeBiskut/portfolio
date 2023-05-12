@@ -74,7 +74,7 @@
 :root {
     --pad: max(20px, 4vmin);
 }
-    
+
 html {
     --vw: 10.01px;
     --vh: 7.03px;
@@ -115,6 +115,11 @@ li {
     font-weight: 600;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .page {
     width: 100%;
     min-height: calc(var(--vh, 1vh)*100);
@@ -125,6 +130,10 @@ li {
     right: calc(var(--pad)*2);
     bottom: calc(var(--pad)*2);
     white-space: nowrap;
+}
+
+.contact{
+    line-height: 1.5;
 }
 
 #container {
