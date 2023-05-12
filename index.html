@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div id="page">
+    <div id="container">
         <div id="background">
             <div id="animation">
                 <div id="stars"></div>
@@ -23,7 +23,7 @@
 
             <header id="header">
                 <h1>Joshua Rinehart</h1>
-                <p>Fullstack Web Developer</p>
+                <p id="title">Fullstack Web Developer</p>
                 <nav>
                     <ol>
                         <li class="">Home</li>
@@ -33,18 +33,24 @@
                 </nav>
             </header>
 
-            <main>
-                <div id="container">
-                    <section id="home" class="" style="display: block;">
-
+            <main id="content">
+                <div id="content-inner">
+                    <section class="page selected" id="home" style="display: block;">
+                        <div class="page-content">
+                            <p>Something</p>
+                        </div>
                     </section>
 
-                    <section id="projects" class="" style="display: none;">
-                        Projects list goes here
+                    <section class="page" id="projects" style="display: none;">
+                        <div class="page-content">
+                            <p>Projects</p>
+                        </div>
                     </section>
 
-                    <section id="contact" class="" style="display: none;">
-                        LinkedIn, GitHub, StackExchange?
+                    <section class="page" id="contact" style="display: none;">
+                        <div class="page-content">
+                            <p>Contact</p>
+                        </div>
                     </section>
                 </div>
             </main>
