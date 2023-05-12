@@ -71,9 +71,15 @@
 }
 
 
-
 :root {
     --pad: max(20px, 4vmin);
+}
+    
+html {
+    --vw: 10.01px;
+    --vh: 7.03px;
+    --vmax: 10.01px;
+    --vmin: 7.03px;
 }
 
 body {
