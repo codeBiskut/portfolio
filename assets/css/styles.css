@@ -114,22 +114,28 @@ ol {
 
 li {
     font-weight: 600;
-    transition: opacity 500ms cubic-bezier(.65,.05,.25,1.03);
+    transition: opacity 500ms cubic-bezier(.65, .05, .25, 1.03);
     cursor: pointer;
 }
 
-li:hover{
+li:hover {
     opacity: 50%;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    transition: opacity 500ms cubic-bezier(.65,.05,.25,1.03);
+    transition: opacity 500ms cubic-bezier(.65, .05, .25, 1.03);
 }
 
-a:hover{
+a:hover {
     opacity: 50%;
+}
+
+.hide {
+    transition: opacity 200ms, display 200ms;
+    display: none;
+    opacity: 0;
 }
 
 .page {
@@ -144,12 +150,22 @@ a:hover{
     white-space: nowrap;
 }
 
-.contact{
+.contact {
     line-height: 1.5;
+    text-align: right;
 }
 
-.default-cursor{
+.default-cursor {
     cursor: default;
+}
+
+.project-item {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.project-description {
+    margin: 0px;
 }
 
 #container {
