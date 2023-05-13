@@ -101,18 +101,17 @@ a:hover {
     opacity: 50%;
 }
 
-.page {
-    width: 100%;
-    min-height: calc(var(--vh, 1vh)*100);
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 0.5s cubic-bezier(.65, .05, .25, 1.03);
+.selected{
+    opacity: 50%;
 }
 
 .show {
+    width: 100%;
+    min-height: calc(var(--vh, 1vh)*100);
     visibility: visible;
     opacity: 1;
     position: absolute;
+    transition: visibility 0s, opacity 0.5s cubic-bezier(.65, .05, .25, 1.03);
 }
 
 .hide{
@@ -254,15 +253,5 @@ a:hover {
 
     to {
         transform: translateY(-2000px);
-    }
-}
-
-@keyframes fade {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
     }
 }
