@@ -256,18 +256,18 @@ a:hover {
     }
 }
 
-@media (max-width: 425px){
+@media (max-width: 415px){
     .page-content {
         position: absolute;
-        right: calc(var(--pad));
-        bottom: calc(var(--pad));
+        right: calc(var(--pad)*1.5);
+        bottom: calc(var(--pad)*1.5);
         white-space: nowrap;
     }
     
     #header {
         position: fixed;
         z-index: 5;
-        left: calc(var(--pad));
-        top: calc(var(--pad));
+        left: calc(var(--pad)*1.5);
+        top: calc(var(--pad)*1.5);
     }
 }
