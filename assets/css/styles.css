@@ -255,3 +255,19 @@ a:hover {
         transform: translateY(-2000px);
     }
 }
+
+@media (max-width: 425px){
+    .page-content {
+        position: absolute;
+        right: calc(var(--pad));
+        bottom: calc(var(--pad));
+        white-space: nowrap;
+    }
+    
+    #header {
+        position: fixed;
+        z-index: 5;
+        left: calc(var(--pad));
+        top: calc(var(--pad));
+    }
+}
