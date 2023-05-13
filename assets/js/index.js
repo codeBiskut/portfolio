@@ -6,9 +6,8 @@ const contactEl = document.getElementById('contact');
 const pages = [homeEl, projectsEl, contactEl];
 
 function pageDeselect(item) {
-    if (item.getAttribute('class') === 'page selected') {
-        item.setAttribute('class', 'page');
-        item.setAttribute('style', 'display: none');
+    if (item.getAttribute('class') === 'page show') {
+        item.setAttribute('class', 'hide');
     }
 }
 
@@ -23,18 +22,15 @@ function pageSelect(event) {
     else{
         pages.forEach(pageDeselect);
     }
-
+    
     if (newLocation === 'home') {
-        homeEl.setAttribute('class', 'page selected');
-        homeEl.setAttribute('style', 'display: block');
+        homeEl.setAttribute('class', 'page show');
     }
     else if (newLocation === 'projects') {
-        projectsEl.setAttribute('class', 'page selected');
-        projectsEl.setAttribute('style', 'display: block');
+        projectsEl.setAttribute('class', 'page show');
     }
     else if (newLocation === 'contact') {
-        contactEl.setAttribute('class', 'page selected');
-        contactEl.setAttribute('style', 'display: block');
+        contactEl.setAttribute('class', 'page show');
     }
     else {
         return console.log('all of them')

@@ -53,8 +53,6 @@ html {
 }
 
 body {
-    /* background-color: #eee7e1; */
-
     font-family: 'Neue Montreal', sans-serif;
     font-weight: 500px;
     font-size: 14px;
@@ -103,15 +101,24 @@ a:hover {
     opacity: 50%;
 }
 
-.hide {
-    transition: opacity 200ms, display 200ms;
-    display: none;
-    opacity: 0;
-}
-
 .page {
     width: 100%;
     min-height: calc(var(--vh, 1vh)*100);
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s cubic-bezier(.65, .05, .25, 1.03);
+}
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+}
+
+.hide{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s cubic-bezier(.65, .05, .25, 1.03);
 }
 
 .page-content {
@@ -247,5 +254,15 @@ a:hover {
 
     to {
         transform: translateY(-2000px);
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }
