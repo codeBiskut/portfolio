@@ -110,7 +110,6 @@ a:hover {
     min-height: calc(var(--vh, 1vh)*100);
     visibility: visible;
     opacity: 1;
-    position: absolute;
     transition: visibility 0s, opacity 0.5s cubic-bezier(.65, .05, .25, 1.03);
 }
 
