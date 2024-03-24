@@ -9,7 +9,7 @@
 /* NAVBAR CSS */
 
 .navbar {
-    height: 80px;
+    height: 100px;
     margin: 0px 10px 0px 26px;
     display: flex;
     justify-content: space-between;
@@ -20,15 +20,16 @@
     z-index: 999;
 }
 
-.navbar_container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
-    z-index: 1;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
+#code-icon {
+    background: #C6FFDD;
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  
+    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);    
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
 }
 
 .navbar_menu {
@@ -54,6 +55,14 @@
 .navbar_links:hover {
     color: #f77062;
     transition: all 0.3s ease;
+}
+
+.navbar a{
+    color: black;
+}
+
+.navbar a:visited {
+    color: black;
 }
 
 #code-icon {
@@ -149,7 +158,7 @@
     }
 }
 
-/* CONTENT CSS */
+/* HERO CONTENT CSS */
 .content {
     padding-top: 30px;
 }
@@ -164,9 +173,9 @@
 }
 
 .hero-text h2{
-    font-size: 60px;
+    font-size: 65px;
     font-weight: 500;
-    line-height: 1.5;
+    line-height: 1.25;
 }
 
 .image-container {
@@ -174,11 +183,37 @@
     box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     width: 100%;
-    height: 60vh;
+    height: 720px;
 }
 
 .image-container img{
     width: 100%;
     height: auto;
     display: block;
+}
+
+/* PROJECT CONTENT CSS */
+.project-content{
+    margin-top: 50px;
+    padding-top: 50px;
+    background-color: #C6FFDD;
+}
+
+.project-container{
+    max-width: 70vw;
+    margin: 0 auto;
+}
+
+.tag{
+    margin: 40px auto;
+}
+
+.project-container h2{
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+.project-container .image-container{
+    position: relative;
 }
