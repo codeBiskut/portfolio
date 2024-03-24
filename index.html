@@ -3,119 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page Website</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ysabeau:wght@200&display=swap" rel="stylesheet">
-    <title>Joshua Rinehart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-    <div id="container">
-        <div id="animation">
-            <div id="stars"></div>
-            <div id="stars2"></div>
-            <div id="stars3"></div>
-        </div>
+    <header>
+        <nav class="navbar">
+            <a href="/index.html" id="navbar_logo"><i id="code-icon" class="fa-solid fa-code"></i>Joshua Rinehart</a>
+            <div class="navbar_toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar_menu">
+                <li class="navbar_item">
+                    <a href="/index.html" class="navbar_links">Home</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/services.html" class="navbar_links">Services</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="/portfolio.html" class="navbar_links">Portfolio</a>
+                </li>
+                <li class="navbar_item">
+                    <a href="mailto:josh.rinehart.2k@gmail.com" class="navbar_links">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <div id="background">
-            <header id="header">
-                <h1 class="default-cursor">Joshua Rinehart</h1>
-                <p id="title" class="default-cursor">Fullstack Web Developer</p>
-                <nav>
-                    <ol>
-                        <li class="selected" id="nav-home">Home</li>
-                        <li class="" id="nav-projects">Projects</li>
-                        <li class="" id="nav-contact">Contact</li>
-                    </ol>
-                </nav>
-            </header>
+    <div class="content">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>How you design, align, and build matters. Do it with Genesis.</h2>
+            </div>
+            
+            <div class="image-container">
+                <img src="./assets/images/coding1.jpg" alt="image">
+            </div>
 
-            <main id="content">
-                <div id="content-inner">
-                    <section class="show" id="home" >
-                        <div class="page-content default-cursor">
-                            <p>A designer and developer;</p>
-                            <p>I bridge the gap between</p>
-                            <p>imagination and reality</p>
-                            <p>to inspire others and</p>
-                            <p>challenge what is possible.</p>
-                        </div>
-                    </section>
-
-                    <section class="hide" id="projects" >
-                        <div class="page-content">
-                            <section class="project-item">
-                                <a href="https://wolfgrp.com/" target="_blank">
-                                    <h1>Wolf Group</h1>
-                                    <p class="project-description">Services & Facilities pages / PixelParade</p>
-                                </a>
-                            </section>
-
-                            <section class="project-item">
-                                <a href="https://productiv.com/partners/" target="_blank">
-                                    <h1>Productiv</h1>
-                                    <p class="project-description">Partners page / PixelParade</p>
-                                </a>
-                            </section>
-
-                            <section class="project-item">
-                                <a href="https://github.com/erin-maxson/cat-and-dog-adoption-search" target="_blank">
-                                    <h1>Animal Adoption Search</h1>
-                                    <p class="project-description">Group project / Bootcamp</p>
-                                </a>
-                            </section>
-
-                            <section class="project-item">
-                                <a href="https://github.com/erin-maxson/coders-almanac" target="_blank">
-                                    <h1>Coder's Almanac</h1>
-                                    <p class="project-description">Group project / Bootcamp</p>
-                                </a>
-                            </section>
-
-                            <section class="project-item">
-                                <a href="https://github.com/codeBiskut/social-network-api" target="_blank">
-                                    <h1>Social Network API</h1>
-                                    <p class="project-description">Solo project / Bootcamp</p>
-                                </a>
-                            </section>
-
-                            <section class="project-item">
-                                <a href="https://github.com/codeBiskut/eCommerce-back-end" target="_blank">
-                                    <h1>e-Commerce Back-End</h1>
-                                    <p class="project-description">Solo project / Bootcamp</p>
-                                </a>
-                            </section>
-
-                            <section class="project-item">
-                                <a href="https://github.com/codeBiskut/Professional-README-Generator" target="_blank">
-                                    <h1>README Generator</h1>
-                                    <p class="project-description">Solo project / Bootcamp</p>
-                                </a>
-                            </section>
-                        </div>
-                    </section>
-
-                    <section class="hide" id="contact">
-                        <div class="page-content contact">
-                            <a href="https://www.linkedin.com/in/joshua-rinehart/" target="_blank">
-                                <h1>Linkedin</h1>
-                            </a>
-                            <a href="https://github.com/codeBiskut" target="_blank">
-                                <h1>GitHub</h1>
-                            </a>
-                            <a href="https://stackoverflow.com/users/12264022/joshua-rinehart" target="_blank">
-                                <h1>StackOverflow</h1>
-                            </a>
-                        </div>
-                    </section>
-                </div>
-            </main>
         </div>
     </div>
 
+    <script src="https://kit.fontawesome.com/2aec9fee2b.js" crossorigin="anonymous"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 
