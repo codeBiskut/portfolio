@@ -21,9 +21,9 @@
 }
 
 #code-icon {
-    background: #C6FFDD;
-    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  
-    background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);    
+    background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
     background-size: 100%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -53,11 +53,11 @@
 }
 
 .navbar_links:hover {
-    color: #f77062;
+    color: #f64f59;
     transition: all 0.3s ease;
 }
 
-.navbar a{
+.navbar a {
     color: black;
 }
 
@@ -166,19 +166,21 @@
 .hero-content {
     max-width: 70vw;
     margin: 0 auto;
+    text-align: center;
 }
 
 .hero-text {
     margin: 40px auto;
 }
 
-.hero-text h2{
-    font-size: 65px;
+.hero-text h2 {
+    font-size: 4rem;
     font-weight: 500;
     line-height: 1.25;
 }
 
 .image-container {
+    margin-top: 40px;
     border-radius: 15px;
     box-shadow: 0 0px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -186,34 +188,68 @@
     height: 720px;
 }
 
-.image-container img{
+.image-container img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-/* PROJECT CONTENT CSS */
-.project-content{
-    margin-top: 50px;
-    padding-top: 50px;
-    background-color: #C6FFDD;
+button {
+    background-color: #f64f59;
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.project-container{
+button:hover {
+    transform: translateY(-5px);
+}
+
+/* PROJECT CONTENT CSS */
+.project-content {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px rgba(0, 0, 0, 0.3) solid;
+}
+
+.project-container {
     max-width: 70vw;
     margin: 0 auto;
 }
 
-.tag{
+.tag {
     margin: 40px auto;
 }
 
-.project-container h2{
-    font-size: 60px;
+.project-container h2 {
+    font-size: 3.5rem;
     font-weight: 500;
     line-height: 1.25;
 }
 
-.project-container .image-container{
+.side-by-side{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.side-by-side p{
+    font-size: 1.5rem;
     position: relative;
+    overflow: visible;
+}
+
+.project-container .image-container {
+    position: relative;
+    bottom: -51px;
+    right: -200px;
+    border: 1px rgba(0, 0, 0, 0.3) solid;
+    box-shadow: none;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
 }
